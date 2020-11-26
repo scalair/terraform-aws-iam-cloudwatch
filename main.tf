@@ -1,5 +1,6 @@
 module "iam_user" {
-  source = "github.com/terraform-aws-modules/terraform-aws-iam.git//modules/iam-user?ref=v2.1.0"
+  source  = "github.com/terraform-aws-modules/terraform-aws-iam.git//modules/iam-user"
+  version = "~> 2.0"
 
   name          = var.iam_user_name
   pgp_key       = var.iam_user_pgp_key
